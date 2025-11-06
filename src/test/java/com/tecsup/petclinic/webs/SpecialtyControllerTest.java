@@ -48,7 +48,7 @@ public class SpecialtyControllerTest {
         Mockito.when(specialtyService.findById(999))
                 .thenThrow(new SpecialtyNotFoundException("Specialty not found"));
 
-        mockMvc.perform(get("/specialties/999"))
+        mockMvc.perform(get("/specialties/99"))
                 .andExpect(status().isNotFound());
     }
 

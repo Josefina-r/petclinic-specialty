@@ -70,6 +70,6 @@ public class OwnerControllerTest {
                         .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON))
                 .andExpect(status().isCreated())
                 .andExpect(jsonPath("$.firstName", is("Betty")))
-                .andExpect(jsonPath("$.lastName", is("Davis")));
+                .andExpect(jsonPath("$.lastName", is("Das")));
     }
 }
